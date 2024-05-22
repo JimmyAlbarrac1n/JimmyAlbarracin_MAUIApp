@@ -14,7 +14,7 @@ namespace JimmyAlbarracin_MAUIApp
         private void Button_Clicked(object sender, EventArgs e)
         {
             var client = new HttpClient();
-            client.BaseAddress = new Uri("https://localhost:7255/api/");
+            client.BaseAddress = new Uri("https://localhost:7161/api/");
             var response = client.GetAsync("burger").Result;
             if (response.IsSuccessStatusCode)
             {
